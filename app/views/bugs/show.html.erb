@@ -1,0 +1,4 @@
+<%= render "shared/navbar", active_page: "bugs" %>
+<%= render "nav", prev_bug_hashid: @prev_bug_hashid, next_bug_hashid: @next_bug_hashid %>
+<%= render "bug_and_colors", bug: @bug %>
+<%= render "meta_table", bug: @bug %>

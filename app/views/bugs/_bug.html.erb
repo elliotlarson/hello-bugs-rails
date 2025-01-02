@@ -1,0 +1,5 @@
+<div class="bug__thumb m-4 float-left">
+  <%= link_to bug_path(bug.to_param), class: "bug__thumb__link shadow-lg hover:shadow-xl block transition duration-300 ease-out transform hover:-translate-y-1 hover:scale-105" do %>
+    <%= image_tag "bugs/thumb/#{bug.to_param}.png", class: "bug__thumb__img block" %>
+  <% end %>
+</div>

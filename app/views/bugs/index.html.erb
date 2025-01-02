@@ -1,0 +1,4 @@
+<%= render "shared/navbar", active_page: "bugs" %>
+<div class="p-4 flex flex-wrap justify-center">
+  <%= render partial: "bug", collection: @bugs, as: :bug %>
+</div>

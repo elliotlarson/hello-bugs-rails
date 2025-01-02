@@ -1,0 +1,35 @@
+<div class="container mx-auto p-8 pt-0 pb-20 pb-4 flex justify-center">
+  <div class="bug__meta-table__wrapper">
+    <% table_cell_class = "border border-gray-300 px-4 py-2 text-sm text-gray-600" %>
+    <table class="table-auto bug__meta-table">
+      <tbody>
+        <tr>
+          <td class="<%= table_cell_class%>" style="width: 8rem;">ID</td>
+          <td class="<%= table_cell_class%>"><%= bug.to_param %></td>
+        </tr>
+        <tr>
+          <td class="<%= table_cell_class%>" style="width: 8rem;">Batch</td>
+          <td class="<%= table_cell_class%>"><%= bug.batch %></td>
+        </tr>
+        <tr>
+          <td class="<%= table_cell_class%>">Term</td>
+          <td class="<%= table_cell_class%>"><%= bug.term %></td>
+        </tr>
+        <tr>
+          <td class="<%= table_cell_class%>">Language</td>
+          <td class="<%= table_cell_class%>">
+            <%= link_to bug.wikipedia, target: "_blank", class: "underline transition duration-250 ease-out hover:text-black" do %>
+              <%= bug.language %>
+            <% end %>
+          </td>
+        </tr>
+        <% if bug.language != "English" %>
+          <tr>
+            <td class="<%= table_cell_class%>">English</td>
+            <td class="<%= table_cell_class%>"><%= bug.translation %></td>
+          </tr>
+        <% end %>
+      </tbody>
+    </table>
+  </div>
+</div>

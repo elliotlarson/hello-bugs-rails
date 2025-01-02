@@ -2,12 +2,69 @@
 @tailwind components;
 @tailwind utilities;
 
-/*
-
-@layer components {
-  .btn-primary {
-    @apply py-2 px-4 bg-blue-200;
-  }
+.bug__nav {
+  width: 100%;
 }
 
-*/
+.bug__nav__inner {
+  width: 100%;
+}
+
+/* .bug__thumb__link {
+  background-image: url("../images/placeholder.png");
+  background-size: 9rem;
+  width: 9rem;
+  height: 10.5rem;
+} */
+
+.bug__wrapper {
+  width: 100%;
+}
+
+.bug__wrapper svg {
+  width: 100%;
+  height: inherit;
+}
+
+.bug__colors__wrapper {
+  width: 130px;
+}
+
+.bug__meta-table__wrapper {
+  width: 100%;
+}
+
+.bug__nav {
+  width: 630px;
+}
+
+.bug__nav__inner {
+  width: 500px;
+}
+
+.bug__thumb__link {
+  background-size: 15rem;
+  width: 15rem;
+  height: 18rem;
+}
+
+.bug__wrapper {
+  width: 500px;
+}
+
+.bug__wrapper svg {
+  width: 500px;
+  height: 600px;
+}
+
+.bug__colors__wrapper {
+  width: 130px;
+}
+
+.bug__meta-table__wrapper {
+  width: 630px;
+}
+
+.bug__meta-table {
+  width: 500px;
+}
